@@ -66,7 +66,7 @@ const onWin = (board, draw) => {
   process.exit(1);
 };
 
-const markBoard = (draw) => (board, idx, arr) => {
+const markBoard = (draw) => (board) => {
   const { boardRows, boardColumns, boardDiagonals } = board;
   const mark = (row) => {
     return row.filter((num) => num !== draw);
