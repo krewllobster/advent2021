@@ -63,7 +63,6 @@ const setsMatching = (setA, setB) => {
 };
 
 const getKnownPatterns = (patterns, knownPatterns) => {
-  console.log({ patterns, knownPatterns });
   const matches = new Set();
   for (const p of patterns) {
     for (const k of knownPatterns) {
